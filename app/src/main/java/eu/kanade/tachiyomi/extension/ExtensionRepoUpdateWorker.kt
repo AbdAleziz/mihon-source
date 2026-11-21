@@ -97,7 +97,7 @@ class ExtensionRepoUpdateWorker(context: Context, workerParams: WorkerParameters
          * Triggers an immediate one-off check, for a manual "update now" button. Returns false if
          * a check (scheduled or manual) is already running.
          */
-        fun startNow(workManager: WorkManager): Boolean {
+        suspend fun startNow(workManager: WorkManager): Boolean {
             if (workManager.isRunning(TAG)) {
                 return false
             }
