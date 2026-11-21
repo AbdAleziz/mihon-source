@@ -1,3 +1,5 @@
+@file:Suppress("ktlint:standard:filename")
+
 package mihon.baselineprofile
 
 import androidx.test.platform.app.InstrumentationRegistry
